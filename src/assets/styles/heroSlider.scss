@@ -1,0 +1,56 @@
+.hero-slider {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    color: #fff;
+    max-width: 600px;
+    margin-left: 3rem;
+    border-radius: 10px;
+
+    h1 { font-size: 2.5rem; }
+    p { margin: 1rem 0; }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      .primary {
+        background: #007bff;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 6px;
+      }
+
+      .secondary {
+        background: #fff;
+        color: #333;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &.prev { left: 10px; }
+    &.next { right: 10px; }
+  }
+}

@@ -1,0 +1,36 @@
+.card-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem;
+
+    .card {
+      min-width: 450px;
+      // background: #fff;
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  }
+
+  .arrow {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+
+    &.left { margin-right: 10px; }
+    &.right { margin-left: 10px; }
+  }
+}

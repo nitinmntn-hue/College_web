@@ -1,0 +1,67 @@
+@use './variables' as *;
+
+// $white-color
+// $orange-color
+// $blue-color
+// $black-color
+// $primary-color
+// $secondary-color
+// $third-color
+// $fourth-color
+
+.footer{
+    width: 100%;
+    // position: absolute;
+    bottom: 0;
+    background: $black-color;
+    color: $white-color;
+    display: flex;
+    flex-direction: column;
+
+    .footer-container{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .footer-left, .footer-right{
+            display: flex;
+            align-items: center;
+
+            .footer-item{
+                font-family: $font-main;
+                font-size: 0.9rem;
+                cursor: pointer;
+                transition: $transition;
+
+                &:hover{
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+
+    .copy{
+        width: 100%;
+        text-align: center;
+        font-family: $font-main;
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+    }
+
+     @media (max-width:780px){
+
+
+        .footer-container{
+            flex-direction: column;
+            padding: 0 0.5rem;
+
+            .footer-left, .footer-right{
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+
+     }
+}

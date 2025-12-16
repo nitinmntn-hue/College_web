@@ -1,0 +1,69 @@
+@use './variables' as *;
+
+// $white-color
+// $orange-color
+// $blue-color
+// $black-color
+// $primary-color
+// $secondary-color
+// $third-color
+// $fourth-color
+.navbar {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    background: $orange-color;
+    color: $white-color;
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            gap: 1rem;
+
+            li {
+                position: relative;
+                color: $white-color;
+            }
+        }
+
+
+
+        .dropdown-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: $orange-color;
+            color: $white-color;
+            padding: 10px;
+        }
+
+        .dropdown:hover .dropdown-links {
+            display: block;
+        }
+
+    }
+
+
+
+
+    @media (max-width:780px) {
+
+
+        .nav-links {
+            flex-direction: column;
+            gap: 0.5rem;
+
+
+
+        }
+
+    }
+}

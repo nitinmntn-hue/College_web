@@ -1,0 +1,101 @@
+@use './variables' as *;
+
+// $white-color
+// $orange-color
+// $blue-color
+// $black-color
+// $primary-color
+// $secondary-color
+// $third-color
+// $fourth-color
+
+.shine-button {
+  position: relative;
+  padding: 1rem 2rem;
+  background: $blue-color;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: $radius;
+  max-width: 100%;
+  font-weight: 800;
+  cursor: pointer;
+  color: $white-color;
+  overflow: hidden;
+  transition: $transition;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 250%;
+    min-width: 4rem;
+    top: 0;
+    left: -60px;
+    background: linear-gradient(90deg, transparent, $white-color, transparent);
+    overflow: hidden;
+    transform: rotate(45deg) translateY(-35%);
+    animation: shine 3s ease-in-out infinite;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes shine {
+  0% { left: -80px; }
+  40% { left: calc(100% + 20px); }
+  100% { left: calc(100% + 20px); }
+}
+
+/* Example color variants */
+
+.button-primary{
+  background: linear-gradient(135deg, $primary-color, $orange-color);
+  box-shadow: 0 10px 30px rgba(247,151,30,0.4);
+}
+.button-secondary {
+  background: linear-gradient(135deg,$primary-color, $fourth-color);
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+
+.button-red {
+  background: $primary-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+.button-orange {
+  background: $orange-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+.button-black {
+  background: $black-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+
+.button-black {
+  background: $fourth-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+.button-white {
+  background: $white-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+  color: $black-color;
+}
+.button-twitter {
+  background: $secondary-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+.button-olive {
+  background: $third-color;
+  box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
+}
+
+// $white-color
+// $black-color
+// $primary-color
+// $secondary-color
+// $third-color
+// $fourth-color
