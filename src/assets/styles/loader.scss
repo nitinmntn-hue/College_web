@@ -1,0 +1,29 @@
+/* Loader.scss */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;   // full screen height
+  background: rgba(0,0,0,0.05); // optional light overlay
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #3498db; // blue highlight
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}

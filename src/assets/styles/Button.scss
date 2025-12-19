@@ -12,14 +12,14 @@
 .shine-button {
   position: relative;
   padding: 1rem 2rem;
-  background: $blue-color;
+  background: var(--blue-color);
   font-size: 1.2rem;
   border: none;
   border-radius: $radius;
   max-width: 100%;
   font-weight: 800;
   cursor: pointer;
-  color: $white-color;
+  color: var(--white-color);
   overflow: hidden;
   transition: $transition;
 
@@ -30,7 +30,7 @@
     min-width: 4rem;
     top: 0;
     left: -60px;
-    background: linear-gradient(90deg, transparent, $white-color, transparent);
+    background: linear-gradient(90deg, transparent, var(--white-color), transparent);
     overflow: hidden;
     transform: rotate(45deg) translateY(-35%);
     animation: shine 3s ease-in-out infinite;
@@ -54,42 +54,42 @@
 /* Example color variants */
 
 .button-primary{
-  background: linear-gradient(135deg, $primary-color, $orange-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--orange-color));
   box-shadow: 0 10px 30px rgba(247,151,30,0.4);
 }
 .button-secondary {
-  background: linear-gradient(135deg,$primary-color, $fourth-color);
+  background: linear-gradient(135deg,var(--primary-color), var(--fourth-color));
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 
 .button-red {
-  background: $primary-color;
+  background: var(--primary-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 .button-orange {
-  background: $orange-color;
+  background: var(--orange-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 .button-black {
-  background: $black-color;
+  background: var(--black-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 
 .button-black {
-  background: $fourth-color;
+  background: var(--fourth-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 .button-white {
-  background: $white-color;
+  background: var(--white-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
-  color: $black-color;
+  color: var(--black-color);
 }
 .button-twitter {
-  background: $secondary-color;
+  background: var(--secondary-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 .button-olive {
-  background: $third-color;
+  background: var(--third-color);
   box-shadow: 0 10px 30px rgba(170, 169, 169, 0.4);
 }
 

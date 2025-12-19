@@ -1,0 +1,108 @@
+@use "./variables";
+
+.sport-detail {
+  padding: 4rem 6vw;
+  color: var(--text-main);
+}
+
+.sport-detail-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .sport-detail-description {
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+}
+
+.sport-detail-info {
+  margin-bottom: 3rem;
+
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+
+  ul {
+    margin-left: 1rem;
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+.sport-gallery {
+  margin-bottom: 3rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.back-btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-btn {
+  padding: 0.7rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  color: var(--text-main);
+  font-weight: 600;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: rgba(255,255,255,0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .sport-detail-header {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

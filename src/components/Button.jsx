@@ -23,10 +23,29 @@ const Button = ({
   };
 
   return (
-    <button className={className} type={type} onClick={handleClick}>
+    <button className={`btn btn-${variant}`} type="button">
       {text}
     </button>
   );
 };
 
 export default Button;
+
+
+// const Button1 = ({ text, link, variant = 'primary' }) => {
+//   if (link) {
+//     return (
+//       <Link to={link} className={`btn btn-${variant}`}>
+//         {text}
+//       </Link>
+//     );
+//   }
+
+//   return (
+//     <button className={`btn btn-${variant}`} type="button">
+//       {text}
+//     </button>
+//   );
+// };
+
+
