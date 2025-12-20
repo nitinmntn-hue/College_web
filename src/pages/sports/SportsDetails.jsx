@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import FadeInSection from "../components/FadeInSection";
-import sportsData from "../data/sportsData";
-import "../assets/styles/sportDetail.scss";
+import FadeInSection from "../../components/FadeInSection";
+import sportsData from "../../data/sportsData";
+import "../../assets/styles/sportDetail.scss";
 
 const SportDetail = () => {
   const { id } = useParams();

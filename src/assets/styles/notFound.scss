@@ -1,0 +1,56 @@
+@use "./variables";
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 4.5rem);
+  text-align: center;
+  color: var(--text-main);
+
+  .not-found-content {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+    h1 {
+      font-size: clamp(4rem, 10vw, 8rem);
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .back-home-btn {
+      padding: 0.7rem 1.4rem;
+      background: linear-gradient(135deg, #f8b500, #ff8c42);
+      border-radius: 12px;
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+  }
+
+
+
+
+
+}

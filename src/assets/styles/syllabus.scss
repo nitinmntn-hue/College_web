@@ -1,0 +1,118 @@
+@use './variables';
+
+.syllabus-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6vw;
+    min-height: calc(100vh - 4.5rem);
+    text-align: center;
+    color: var(--text-main);
+
+    .syllabus-container {
+        background: var(--surface);
+        border: 1px solid var(--surface-border);
+        border-radius: 20px;
+        padding: 2rem 2rem;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+        max-width: 1200px;
+        width: 100%;
+
+        .syllabus-header {
+            margin-bottom: 2rem;
+
+            h1 {
+                font-size: clamp(2rem, 5vw, 3rem);
+                margin-bottom: 0.5rem;
+                color: var(--accent);
+                border-bottom: 2px solid var(--accent);
+            }
+
+            p {
+                color: var(--text-muted);
+                font-size: 1.1rem;
+            }
+        }
+
+        .syllabus-section {
+            margin-top: 2rem;
+            text-align: left;
+
+            .syllabus-table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 2rem;
+
+                th,
+                td {
+                    border: 1px solid var(--surface-border);
+                    padding: 0.75rem 1rem;
+                    text-align: left;
+                }
+
+                th {
+                    background: var(--accent);
+                    color: #111;
+                    font-weight: 600;
+                }
+
+                tr:hover {
+                    background: rgba(255, 255, 255, 0.08);
+                }
+            }
+
+        }
+
+
+    }
+
+
+
+}
+
+// .table-container {
+//     padding: 2rem;
+//     display: flex;
+//     justify-content: center;
+// }
+
+.custom-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--surface-border);
+    }
+
+    th {
+        background: var(--accent);
+        color: #111;
+        font-weight: 600;
+    }
+
+    tr:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+.table-link {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--accent);
+    }
+}

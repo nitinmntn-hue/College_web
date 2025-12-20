@@ -1,7 +1,7 @@
-import FadeInSection from "../components/FadeInSection";
-import "../assets/styles/sports.scss";
+import FadeInSection from "../../components/FadeInSection";
+import "../../assets/styles/sports.scss";
 
-import sportsData from "../data/sportsData";
+import sportsData from "../../data/sportsData";
 import { Link } from "react-router-dom";
 
 const Sports = () => {

@@ -32,17 +32,17 @@ const Navbar = () => {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           {/* Academics */}
-          <NavLink to="/sports">Academic</NavLink>
-          <NavLink to="/sports">Faculty Info</NavLink>
-          <NavLink to="/sports">Calender</NavLink>
-          <NavLink to="/sports">Syllabus</NavLink>
-          <NavLink to="/sports">Course</NavLink>
-          <NavLink to="/sports">Results</NavLink>
-          <NavLink to="/sports">Career</NavLink>
+          <NavLink to="/academic">Academic</NavLink>
+          <NavLink to="/faculty_info">Faculty Info</NavLink>
+          <NavLink to="/calender">Calender</NavLink>
+          <NavLink to="/syllabus">Syllabus</NavLink>
+          <NavLink to="/course">Course</NavLink>
+          <NavLink to="/results">Results</NavLink>
+          <NavLink to="/career">Career</NavLink>
           {/* Award */}
           <NavLink to="/sports">Sports</NavLink>
-          <NavLink to="/sports">Gallery</NavLink>
-          <NavLink to="/sports">Disclosure</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/disclosure">Disclosure</NavLink>
         </nav>
 
         <button
