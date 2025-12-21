@@ -1,10 +1,11 @@
 import React from 'react';
 import '../../assets/styles/result.scss';
+import Login from '../../components/Login';
 
 const ResultDetals = () => {
   return (
-    <div>
-        Result Details Page
+    <div className="resultDetails">
+        <Login />
     </div>
   )
 }

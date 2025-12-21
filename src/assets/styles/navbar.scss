@@ -6,6 +6,7 @@
   width: 100%;
   z-index: 100;
   padding: 0.8rem 6vw;
+  background-image: url("https://images.unsplash.com/photo-1462536943532-57a629f6cc60?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .navbar-inner {
@@ -53,32 +54,31 @@
   align-items: center;
   gap: 1.4rem;
   font-size: 0.92rem;
-}
 
-.navbar-links a {
-  color: var(--text-muted);
-  position: relative;
-}
+  a {
+    color: var(--text-muted);
+    position: relative;
 
-.navbar-links a.active {
-  color: var(--text-main);
-}
+    &.active {
+      color: var(--text-main);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 999px;
+      transition: width 0.25s ease;
 
-.navbar-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -0.25rem;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  border-radius: 999px;
-  transition: width 0.25s ease;
-}
-
-.navbar-links a:hover::after,
-.navbar-links a.active::after {
-  width: 100%;
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .theme-toggle {
@@ -105,6 +105,7 @@
   }
 
   .navbar-links {
-    display: none; /* you can later add a mobile menu */
+    display: none;
+    /* you can later add a mobile menu */
   }
 }
