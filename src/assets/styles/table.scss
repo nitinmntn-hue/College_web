@@ -1,0 +1,22 @@
+ .syllabus-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-bottom: 2rem;
+
+     th,
+     td {
+         border: 1px solid var(--surface-border);
+         padding: 0.75rem 1rem;
+         text-align: left;
+     }
+
+     th {
+         background: var(--accent);
+         color: #111;
+         font-weight: 600;
+     }
+
+     tr:hover {
+         background: rgba(255, 255, 255, 0.08);
+     }
+ }
