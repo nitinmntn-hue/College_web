@@ -31,6 +31,9 @@
   opacity: 0;
   transform: translateX(-60px);
   animation: slideInContent 1.1s ease forwards;
+  h1{
+    border: 0;
+  }
 }
 
 .hero-kicker {
@@ -39,18 +42,6 @@
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 0.75rem;
-}
-
-.hero-title {
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-  color: var(--text-muted);
 }
 
 .hero-paragraph {

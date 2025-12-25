@@ -2,7 +2,11 @@ import React from 'react'
 
 const Calender = () => {
   return (
-    <div>Calender</div>
+    <main className='main-page'>
+      <h2 className="heading">
+        Calender Page
+      </h2>
+    </main>
   )
 }
 

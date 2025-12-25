@@ -49,7 +49,7 @@ main {
 .parallax-bg {
   position: fixed;
   inset: 0;
-  background-image: url('/hero-campus.jpg');
+  background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/tall-skyscrapers-view-from-below-vintage-edit-free-photo.jpg?w=1500&quality=50');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -72,6 +72,28 @@ main {
   min-height: 80vh;
   padding-top: 3rem;
   /* room for fixed navbar */
+}
+
+.main-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.description {
+  color: var(--text-main) !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 a {
@@ -125,6 +147,7 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   font-size: 0.95rem;
+  color: var(--text-main);
   font-weight: 900;
   border: 1px solid transparent;
   cursor: pointer;
@@ -134,7 +157,6 @@ button {
 
 .btn-primary {
   background: linear-gradient(135deg, #f8b500, #ff8c42);
-  color: #111;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -160,17 +182,18 @@ button {
   }
 
   main {
-  width: 100%;
-  min-height: 70vh;
-  padding-top: 3.5rem;
-  /* room for fixed navbar */
-}
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 3.5rem;
+    /* room for fixed navbar */
+  }
+
   /* global.scss */
-.app {
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  // min-height: 30vh; // full viewport height 
-}
-  
+  .app {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    // min-height: 30vh; // full viewport height 
+  }
+
 }

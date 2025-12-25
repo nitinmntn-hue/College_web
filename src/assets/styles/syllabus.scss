@@ -8,7 +8,6 @@
     padding: 4rem 6vw;
     min-height: calc(100vh - 4.5rem);
     text-align: center;
-    color: var(--text-main);
 
     .syllabus-container {
         background: var(--surface);
@@ -29,33 +28,14 @@
                 color: var(--accent);
                 border-bottom: 2px solid var(--accent);
             }
-
-            p {
-                color: var(--text-muted);
-                font-size: 1.1rem;
-            }
         }
 
         .syllabus-section {
             margin-top: 2rem;
             text-align: left;
-
-           
-
         }
-
-
     }
-
-
-
 }
-
-// .table-container {
-//     padding: 2rem;
-//     display: flex;
-//     justify-content: center;
-// }
 
 .custom-table {
     width: 100%;

@@ -9,8 +9,8 @@ const TimeTable = () => {
             <main className="syllabus-page">
                 <div className="syllabus-container">
                     <div className="syllabus-header">
-                        <h1>Time Table</h1>
-                        <p>Explore the detailed timetable for our courses, including class schedules and important dates.</p>
+                        <h1 className='heading'>Time Table</h1>
+                        <p className='description'>Explore the detailed timetable for our courses, including class schedules and important dates.</p>
                     </div>
                     {/* Table content */}
                     <FadeInSection>

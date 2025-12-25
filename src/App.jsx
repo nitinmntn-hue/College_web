@@ -17,6 +17,7 @@ const Results = React.lazy(() => import("./pages/Results/Results"));
 const ResultDetals = React.lazy(() => import("./pages/Results/ResultDetals"));
 const TimeTable = React.lazy(() => import("./pages/syllabus/TimeTable"));
 const Calender = React.lazy(() => import("./pages/syllabus/Calender"));
+const Galary = React.lazy(() => import("./pages/Gallery/Galary"));
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               <Route path="/syllabus" element={<Syllabus />} />
               <Route path="/time_table" element={<TimeTable />} />
               <Route path="/calender" element={<Calender />} />
+              <Route path="/gallery" element={<Galary />} />
 
               {/* Global 404 fallback */}
               <Route path="*" element={<NotFound />} />

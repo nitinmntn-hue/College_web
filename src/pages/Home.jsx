@@ -9,8 +9,8 @@ const Home = () => {
         <div className="hero-inner">
           <div className="hero-content">
             <p className="hero-kicker">Your future starts here</p>
-            <h1 className="hero-title">Welcome to College Portal</h1>
-            <p className="hero-subtitle">
+            <h1 className="heading">Welcome to College Portal</h1>
+            <p className="description">
               Your gateway to academic excellence, vibrant campus life, and a community that believes in your potential.
             </p>
 

@@ -2,7 +2,12 @@ import React from 'react'
 
 const Course = () => {
   return (
-    <div>Course</div>
+    <main className='main-page'>
+      
+      <h2 className="heading">
+        Course Page
+      </h2>
+    </main>
   )
 }
 

@@ -6,16 +6,14 @@ import { Link } from "react-router-dom";
 
 const Sports = () => {
     return (
-        <main>
-            <FadeInSection>
-                <div className="sports-header">
-                    <h1>Sports & Athletics</h1>
-                    <p>
-                        Explore the world of sports, meet top players, learn about teams,
-                        awards, and the organizations behind each game.
-                    </p>
-                </div>
-            </FadeInSection>
+        <main className="main-page">
+            <div className="sports-header">
+                <h1 className="heading">Sports & Athletics</h1>
+                <p className="description">
+                    Explore the world of sports, meet top players, learn about teams,
+                    awards, and the organizations behind each game.
+                </p>
+            </div>
 
             <div className="sports-grid">
                 {sportsData.map((sport, index) => (

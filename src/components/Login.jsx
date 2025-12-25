@@ -15,7 +15,9 @@ const Login = ({ header = 'Results', username = 'Enrollment No', password = 'Mob
                     <input type='' id='password' name='password' required />
                 </div>
                 <button type='submit' className='btn btn-primary'>{btn}</button>
+
             </form>
+
         </div>
     )
 };

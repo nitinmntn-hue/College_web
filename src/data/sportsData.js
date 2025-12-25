@@ -2,9 +2,9 @@ const sportsData = [
   {
     id: "football",
     name: "Football",
-    image: "/sports/football.jpg",
+    image: "https://i0.wp.com/picjumbo.com/wp-content/uploads/vintage-fairytale-houses-in-austrian-mountains-free-photo.jpg?w=1500&quality=50",
     gallery: [
-      "/sports/football1.jpg",
+      "https://i0.wp.com/picjumbo.com/wp-content/uploads/vintage-fairytale-houses-in-austrian-mountains-free-photo.jpg?w=1500&quality=50",
       "/sports/football2.jpg",
       "/sports/football3.jpg"
     ],
@@ -18,10 +18,10 @@ const sportsData = [
   {
     id: "cricket",
     name: "Cricket",
-    image: "/sports/cricket.jpg",
+    image: "https://i0.wp.com/picjumbo.com/wp-content/uploads/grossglockner-road-in-austria-free-photo.jpg?w=1500&quality=50",
     gallery: [
       "/sports/cricket1.jpg",
-      "/sports/cricket2.jpg",
+      "https://i0.wp.com/picjumbo.com/wp-content/uploads/vintage-fairytale-houses-in-austrian-mountains-free-photo.jpg?w=1500&quality=50",
       "/sports/cricket3.jpg"
     ],
     organizer: "Board of Control for Cricket in India (BCCI)",
@@ -34,11 +34,11 @@ const sportsData = [
   {
     id: "basketball",
     name: "Basketball",
-    image: "/sports/basketball.jpg",
+    image: "https://i0.wp.com/picjumbo.com/wp-content/uploads/driving-over-the-golden-gate-bridge-in-sunset.jpg?w=1500&quality=50",
     gallery: [
       "/sports/basketball1.jpg",
       "/sports/basketball2.jpg",
-      "/sports/basketball3.jpg"
+      "https://i0.wp.com/picjumbo.com/wp-content/uploads/vintage-fairytale-houses-in-austrian-mountains-free-photo.jpg?w=1500&quality=50"
     ],
     organizer: "Basketball Federation of India",
     awards: ["National Basketball Championship"],
